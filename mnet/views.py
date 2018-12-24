@@ -1,10 +1,11 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 import pymongo
 import pandas as pd
 import seaborn as sns
 import matplotlib.pylab as plt
 import xlrd
+import json
 
 uri = "mongodb://yoo:123yoo@ds117109.mlab.com:17109/music_db_kic"
 client = pymongo.MongoClient(uri)
@@ -24,6 +25,10 @@ male_duo = (data[1])
 female_single = (data[2])
 female_duo = (data[3])
 mixed = (data[4])
+
+
+def ajax_tag_autosearch(request):
+    if request.Get.has_key('year'):
 
 
 def main(request):
