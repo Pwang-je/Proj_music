@@ -1,0 +1,304 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/commons.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+    
+        <div id="header">
+{#            <img src="{% static '' %}" alt="">#}
+        </div>
+        
+        <div id="contents" class="container">
+            <form action="" class="form-control"></form>
+
+            <div class="col-md-12 top">
+                <div class="col-md-4">
+                    <div class="col-md-12">
+                        <h4>예측 순위</h4>
+                        <p>2018년 12월</p>
+                        <h1>[24]</h1>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+            <!-- //.top -->
+
+            <div class="col-md-12">
+                <div id="BoxPlot">
+                    <apexchart type=line height=350 :options="chartOptions" :series="series"></apexchart>
+                </div>
+            </div>
+            <!-- graph.1 -->
+
+            <div class="col-md-12">
+
+                <form action="" class="form-inline">{% csrf_token %}
+                    <div class="col-md-12">
+                        <h3>활동유형 현황</h3>
+                        <select name="" id="" class="form-control">
+                            {% for pattern in month %}
+                            <option value="">
+                                <a href="">{{ pattern }}</a>
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="bar">
+                            <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="pie">
+                            <apexchart type=pie :options="chartOptions" :series="series"></apexchart>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!-- // 활동유형 현황 -->
+
+            <div class="col-md-12">
+                <div id="StColumn">
+                    <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
+                </div>
+            </div>
+            <!-- graph.3 -->
+        </div>
+        <!-- // #contents -->
+        
+        <div id="footer">
+            {{ data }}
+        </div>
+        <!-- // #footer -->
+
+    </div>
+</div>
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vue.js' %}"></script>
+<script src="{% static 'js/apexcharts.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+{#<script src="{% static 'js/commons.js' %}"></script>#}
+<!-- pie -->
+<script>
+new Vue({
+    el: '#pie',
+    components: {
+        apexchart: VueApexCharts,
+    },
+    data: {
+        series: [{{ male }}, {{ female }}, {{ mixed }}],
+        chartOptions: {
+            labels: ['남성', '여성', '혼성'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        }
+    }
+})
+</script>
+
+<!-- bar -->
+<script>
+    new Vue({
+        {#delimiters: ['{', '}'],#}
+        el: '#bar',
+        components: {
+            apexchart: VueApexCharts,
+        },
+      data: {
+        series: [{
+          data: [{{ male_single }}, {{ male_duo }}, {{ female_single }}, {{ female_duo }}, {{ mixed }},]
+        }],
+        chartOptions: {
+          plotOptions: {
+            bar: {
+              barHeight: '100%',
+              distributed: true,
+              horizontal: true,
+              dataLabels: {
+                position: 'bottom'
+              },
+            }
+          },
+          colors: ['#33b2df', '#13d8aa','#2b908f', '#f9a3a4', '#90ee7e'
+          ],
+          dataLabels: {
+            enabled: true,
+            textAnchor: 'start',
+            style: {
+              colors: ['#fff']
+            },
+            formatter: function (val, opt) {
+              return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+            },
+            offsetX: 0,
+            dropShadow: {
+              enabled: true
+            }
+          },
+          stroke: {
+            width: 1,
+            colors: ['#fff']
+          },
+          xaxis: {
+            categories: ['남성 솔로', '남성 듀오', '여성 솔로', '여성 듀오', '혼성'
+            ],
+          },
+          yaxis: {
+            labels: {
+              show: false
+            }
+          },
+          title: {
+            text: '',
+            align: 'right',
+            floating: true
+          },
+          tooltip: {
+            theme: 'dark',
+            x: {
+              show: false
+            },
+            y: {
+              title: {
+                formatter: function () {
+                  return ''
+                }
+              }
+            }
+          }
+        }
+      }
+    })
+</script>
+
+<!-- StColumn -->
+<script>
+    new Vue({
+        el: '#StColumn',
+        components: {
+            apexchart: VueApexCharts,
+        },
+        data: {
+            series: [{
+                name: '댄스',
+                data: [44, 55, 41, 67, 22, 80, 20, 30, 40, 50]
+            }, {
+                name: '알엔비',
+                data: [50, 32, 41, 89, 76, 62, 35, 62, 39, 47]
+            }, {
+                name: '힙합',
+                data: [20, 32, 41, 89, 76, 62, 22, 45, 60, 77]
+            }, {
+                name: '락',
+                data: [40, 32, 41, 89, 76, 62, 25, 26, 71, 61]
+            }, {
+                name: 'OST',
+                data: [60, 32, 41, 89, 76, 62, 60, 61, 45, 42]
+            }, {
+                name: '기타',
+                data: [20, 32, 41, 89, 76, 62, 60, 61, 45, 42]
+            }],
+            chartOptions: {
+                chart: {
+                    stacked: true,
+                    stackType: '100%'
+                },
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        legend: {
+                            position: 'bottom',
+                            offsetX: -10,
+                            offsetY: 0
+                        }
+                    }
+                }],
+                xaxis: {
+                    categories: ['2009', '2010', '2011', '2012', '2013',
+                    '2014', '2015', '2016', '2017', '2018'
+                    ],
+                },
+                fill: {
+                    opacity: 1
+                },
+                legend: {
+                    position: 'right',
+                    offsetX: 0,
+                    offsetY: 50
+                }
+            }
+        }
+    })
+</script>
+
+<!-- BoxPlot -->
+<script>
+    new Vue({
+      el: '#BoxPlot',
+      components: {
+        apexchart: VueApexCharts,
+      },
+      data: {
+        series: [{
+          name: '러닝타임',
+          type: 'column',
+          data: [300, 305, 310, 315, 320, 325, 330, 335, 340, 345]
+        }, {
+          name: '평균 음악길이',
+          type: 'line',
+          data: [310, 311, 314, 320, 318, 311, 305, 304, 311, 312]
+        }],
+        chartOptions: {
+          stroke: {
+            width: [0, 4]
+          },
+          title: {
+            text: '시대별 음악길이'
+          },
+          // labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'
+          ],
+          xaxis: {
+            type: 'datetime'
+          },
+          yaxis: [{
+            title: {
+              text: '러닝타임',
+            },
+
+          }]
+        }
+      },
+
+    })
+</script>
+
+</body>
+</html>
