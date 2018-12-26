@@ -23,4 +23,5 @@ urlpatterns = [
 
     path('', views.main),
     path('chart', views.chart),
+    path('musicmodel', views.musicmodel)
 ]

@@ -24,19 +24,27 @@
         
         <div id="contents" class="container">
 
-            <form action="" class="form-group">
-
-            <div class="col-md-12 top">
-                <div class="col-md-4">
-                    <div class="col-md-12">
-                        <h4>예측 순위</h4>
-                        <p>2018년 12월</p>
-                        <h1>[24]</h1>
+            <form action="musicmodel" class="form-inline">{% csrf_token %}
+                <div class="col-md-12" style="margin: 4rem 0;">
+                    <div class="col-md-8">
+                        <input type="text" name="singer" placeholder="가수를 입력하세요" class="form-control">
+                        <input type="text" name="composer" placeholder="작곡가를 입력하세요" class="form-control">
+                        <select name="music_type" class="form-control">
+                            <option value="댄스 > 댄스">댄스</option>
+                            <option value="가요 > 알앤비">알앤비</option>
+                            <option value="가요 > 힙합">힙합</option>
+                            <option value="가요 > 락">락</option>
+                            <option value="OST">OST</option>
+                            <option value="기타">기타</option>
+                        </select>
+                        <input type="submit" value="확인" class="btn btn-info">
+                    </div>
+                    <div class="col-md-4">
+                        <label for=""></label>
+                        <input type="text" placeholder="{{ examp }}" class="form-control">
+                        <input type="text" placeholder="{{ proba }} % 임." class="form-control">
                     </div>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-            </div>
             </form>
             <!-- //.top -->
 
