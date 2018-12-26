@@ -121,8 +121,6 @@ USE_TZ = True
 # add STATIC_NODE (wait)
 STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR, 'templates')
-# STATIC_NODE = os.path.join(BASE_DIR, 'node_modules')
 STATICFILES_DIRS = [
     STATIC_DIR,
-    # STATIC_NODE,
 ]

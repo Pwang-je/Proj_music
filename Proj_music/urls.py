@@ -21,5 +21,6 @@ from mnet import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', views.main)
+    path('', views.main),
+    path('chart', views.chart),
 ]

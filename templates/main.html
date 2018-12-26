@@ -22,7 +22,8 @@
         </div>
         
         <div id="contents" class="container">
-            <form action="" class="form-control"></form>
+
+            <form action="" class="form-group">
 
             <div class="col-md-12 top">
                 <div class="col-md-4">
@@ -35,7 +36,33 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-4"></div>
             </div>
+            </form>
             <!-- //.top -->
+
+
+            <div class="col-md-12">
+
+                <form action="chart" class="form-inline">{% csrf_token %}
+                    <div class="col-md-12">
+                        <h2>활동유형 현황</h2>
+                        {% for target_year in month %}
+                            <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info">
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-6">
+                        <div id="bar">
+                            <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="pie">
+                            <apexchart type=pie :options="chartOptions" :series="series" style="margin-top: 2rem;"></apexchart>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!-- // 활동유형 현황 -->
 
             <div class="col-md-12">
                 <div id="BoxPlot">
@@ -45,35 +72,8 @@
             <!-- graph.1 -->
 
             <div class="col-md-12">
-
-                <form action="" class="form-inline">{% csrf_token %}
-                    <div class="col-md-12">
-                        <h3>활동유형 현황</h3>
-                        <select name="" id="" class="form-control">
-                            {% for pattern in month %}
-                                <option value="">
-                                    <a href="">{{ pattern }}</a>
-                                </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="bar">
-                            <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="pie">
-                            <apexchart type=pie :options="chartOptions" :series="series"></apexchart>
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-            <!-- // 활동유형 현황 -->
-
-            <div class="col-md-12">
                 <div id="StColumn">
+                    <h2>년도별 음악장르 분포</h2>
                     <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
                 </div>
             </div>
@@ -89,24 +89,24 @@
     </div>
 </div>
 
-
 <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/vue.js' %}"></script>
 <script src="{% static 'js/apexcharts.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
-{#<script src="{% static 'js/commons.js' %}"></script>#}
+<script src="{% static 'js/commons.js' %}"></script>
+
 <!-- pie -->
 <script>
-new Vue({
+    new Vue({
     el: '#pie',
     components: {
         apexchart: VueApexCharts,
     },
     data: {
-        series: [{{ male }}, {{ female }}, {{ mixed }}],
+        series: [{{ male }}, {{ female }}, {{ project_group }}, {{ mixed }}],
         chartOptions: {
-            labels: ['남성', '여성', '혼성'],
+            labels: ['남성', '여성', '프로젝트 그룹', '혼성'],
             responsive: [{
                 breakpoint: 480,
                 options: {
@@ -126,7 +126,7 @@ new Vue({
 <!-- bar -->
 <script>
     new Vue({
-        {#delimiters: ['{', '}'],#}
+        delimiters: ['{', '}'],
         el: '#bar',
         components: {
             apexchart: VueApexCharts,
@@ -176,8 +176,8 @@ new Vue({
             }
           },
           title: {
-            text: '',
-            align: 'right',
+            text: '년도별 활동유형',
+            align: 'center',
             floating: true
           },
           tooltip: {
@@ -208,22 +208,22 @@ new Vue({
         data: {
             series: [{
                 name: '댄스',
-                data: [44, 55, 41, 67, 22, 80, 20, 30, 40, 50]
+                data: [437, 364, 357, 391, 329, 305, 309, 241, 353, 388]
             }, {
                 name: '알엔비',
-                data: [50, 32, 41, 89, 76, 62, 35, 62, 39, 47]
+                data: [505, 595, 548, 513, 526, 600, 524, 604, 489, 415]
             }, {
                 name: '힙합',
-                data: [20, 32, 41, 89, 76, 62, 22, 45, 60, 77]
+                data: [176, 152, 128, 127, 183, 185, 268, 210, 169, 206]
             }, {
                 name: '락',
-                data: [40, 32, 41, 89, 76, 62, 25, 26, 71, 61]
+                data: [45, 52, 128, 136, 110, 38, 67, 64, 24, 36]
             }, {
                 name: 'OST',
-                data: [60, 32, 41, 89, 76, 62, 60, 61, 45, 42]
+                data: [15, 16, 43, 0, 1, 5, 2, 7, 23, 76]
             }, {
                 name: '기타',
-                data: [20, 32, 41, 89, 76, 62, 60, 61, 45, 42]
+                data: [19, 16, 40, 32, 51, 67, 21, 70, 142, 80]
             }],
             chartOptions: {
                 chart: {
