@@ -5,13 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/mnet/views.py" line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f94780-98a6-48a0-a4dc-d1793302283c" name="Default Changelist" comment="test22">
-      <change afterPath="$PROJECT_DIR$/mnet_music777.xlsx" afterDir="false" />
+    <list default="true" id="43f94780-98a6-48a0-a4dc-d1793302283c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proj_music/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proj_music/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proj_music/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proj_music/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/commons.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/commons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/commons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,19 +49,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="117" />
-          <entry key="html" value="3108" />
-          <entry key="js" value="714" />
+          <entry key="css" value="164" />
+          <entry key="html" value="4451" />
+          <entry key="js" value="717" />
           <entry key="py" value="2351" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="117" />
-          <entry key="HTML" value="3108" />
-          <entry key="JavaScript" value="714" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="CSS" value="164" />
+          <entry key="HTML" value="4451" />
+          <entry key="JavaScript" value="717" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="Python" value="2351" />
         </counts>
       </usages-collector>
@@ -88,7 +84,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.314034">
+    <splitter split-orientation="horizontal" split-proportion="0.628068">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -115,13 +111,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1344">
-                  <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+                <state relative-caret-position="329">
+                  <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
                   <folding>
-                    <element signature="n#style#0;n#apexchart#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#3443#3972#0#HTML" />
                     <element signature="e#4018#5745#0#HTML" />
                     <element signature="e#5797#7506#0#HTML" />
-                    <element signature="e#7557#8483#0#HTML" />
                   </folding>
                 </state>
               </provider>
@@ -131,11 +129,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="192">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -143,17 +141,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="240">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mnet/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="936">
-                  <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+                <state relative-caret-position="168">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
                   <folding>
                     <element signature="e#24#59#0" expanded="true" />
                     <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
@@ -187,11 +185,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/css/commons.css" />
-        <option value="$PROJECT_DIR$/templates/js/commons.js" />
         <option value="$PROJECT_DIR$/Proj_music/settings.py" />
         <option value="$PROJECT_DIR$/Proj_music/urls.py" />
         <option value="$PROJECT_DIR$/mnet/views.py" />
+        <option value="$PROJECT_DIR$/templates/css/commons.css" />
+        <option value="$PROJECT_DIR$/templates/js/commons.js" />
         <option value="$PROJECT_DIR$/templates/main.html" />
       </list>
     </option>
@@ -211,8 +209,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="257" />
-    <option name="width" value="1649" />
+    <option name="x" value="459" />
+    <option name="y" value="3" />
+    <option name="width" value="1455" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -391,14 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545785990845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pie, bar chart complete.">
+      <created>1545808128484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545808128484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="641" y="3" width="1649" height="1038" extended-state="0" />
+    <frame x="459" y="3" width="1455" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23708422" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12397734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +415,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32929516" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.2679372" />
@@ -442,7 +448,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="test22" />
-    <option name="LAST_COMMIT_MESSAGE" value="test22" />
+    <MESSAGE value="pie, bar chart complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="pie, bar chart complete." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/js/apexcharts.js">
@@ -472,20 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Proj_music/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -505,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mnet/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
             <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
@@ -514,15 +507,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="329">
+          <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#apexchart#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3443#3972#0#HTML" />
             <element signature="e#4018#5745#0#HTML" />
             <element signature="e#5797#7506#0#HTML" />
-            <element signature="e#7557#8483#0#HTML" />
           </folding>
         </state>
       </provider>

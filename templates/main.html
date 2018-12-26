@@ -1,5 +1,6 @@
 <!doctype html>
 {% load staticfiles %}
+<!--suppress JSAnnotator -->
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -41,32 +42,32 @@
 
 
             <div class="col-md-12">
-
                 <form action="chart" class="form-inline">{% csrf_token %}
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="margin-bottom: 4rem;">
                         <h2>활동유형 현황</h2>
                         {% for target_year in month %}
-                            <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info">
+                            <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info" style="width: 6.2rem; margin-top: 2rem;">
                         {% endfor %}
                     </div>
+
                     <div class="col-md-6">
                         <div id="bar">
-                            <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
+                            <apexchart type=bar :options="chartOptions" :series="series"></apexchart>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="height: 400px;">
                         <div id="pie">
-                            <apexchart type=pie :options="chartOptions" :series="series" style="margin-top: 2rem;"></apexchart>
+                            <apexchart type=pie :options="chartOptions" :series="series"></apexchart>
                         </div>
                     </div>
                 </form>
-
             </div>
             <!-- // 활동유형 현황 -->
 
             <div class="col-md-12">
                 <div id="BoxPlot">
-                    <apexchart type=line height=350 :options="chartOptions" :series="series"></apexchart>
+{#                    <apexchart type=line height=350 :options="chartOptions" :series="series"></apexchart>#}
+                    <apexchart type=candlestick height=350 :options="chartOptions" :series="series" />
                 </div>
             </div>
             <!-- graph.1 -->
@@ -267,36 +268,79 @@
       },
       data: {
         series: [{
-          name: '러닝타임',
-          type: 'column',
-          data: [300, 305, 310, 315, 320, 325, 330, 335, 340, 345]
-        }, {
-          name: '평균 음악길이',
-          type: 'line',
-          data: [310, 311, 314, 320, 318, 311, 305, 304, 311, 312]
+          data: [
+              {
+              x: new Date(2008, 01, 01),
+              y: ['', '', '', '']
+              },
+              {
+              x: new Date(2009, 01, 01),
+              y: [326, 534, 209, 400]
+              },
+              {
+              x: new Date(2010, 01, 01),
+              y: [324, 534, 232, 400]
+              },
+              {
+              x: new Date(2011, 01, 01),
+              y: [328, 748, 134, 408]
+              },
+              {
+              x: new Date(2012, 01, 01),
+              y: [326, 620, 034, 358]
+              },
+              {
+              x: new Date(2013, 01, 01),
+              y: [325, 618, 138, 404]
+              },
+              {
+              x: new Date(2014, 01, 01),
+              y: [325, 734, 205, 403]
+              },
+              {
+              x: new Date(2015, 01, 01),
+              y: [321, 650, 225, 358]
+              },
+              {
+              x: new Date(2016, 01, 01),
+              y: [326, 608, 138, 402]
+              },
+              {
+              x: new Date(2017, 01, 01),
+              y: [320, 541, 123, 401]
+              },
+              {
+              x: new Date(2018, 01, 01),
+              y: [322, 651, 111, 400]
+              },
+              {
+              x: new Date(2019, 01, 01),
+              y: []
+              }
+          ]
         }],
         chartOptions: {
-          stroke: {
-            width: [0, 4]
-          },
           title: {
-            text: '시대별 음악길이'
+            text: '년도별 재생시간 추이',
+            align: 'center'
           },
-          // labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-          labels: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'
-          ],
           xaxis: {
             type: 'datetime'
           },
-          yaxis: [{
-            title: {
-              text: '러닝타임',
-            },
-
-          }]
+          yaxis: {
+            tooltip: {
+              enabled: true
+            }
+          },
+          plotOptions: {
+              candlestick: {
+                  colors: {
+                      upward: '#20B2AA'
+                  }
+              }
+          }
         }
-      },
-
+      }
     })
 </script>
 
