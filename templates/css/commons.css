@@ -8,3 +8,12 @@ body {
     margin-bottom: 4rem;
 }
 
+.shadow {
+    -webkit-box-shadow: 5px 10px 18px #888888;
+    -moz-box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.default-margin {
+    margin: 4rem 0 !important;
+}

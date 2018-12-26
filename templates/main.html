@@ -41,7 +41,7 @@
             <!-- //.top -->
 
 
-            <div class="col-md-12">
+            <div class="col-md-12 shadow default-margin">
                 <form action="chart" class="form-inline">{% csrf_token %}
                     <div class="col-md-12" style="margin-bottom: 4rem;">
                         <h2>활동유형 현황</h2>
@@ -64,15 +64,15 @@
             </div>
             <!-- // 활동유형 현황 -->
 
-            <div class="col-md-12">
+            <div class="col-md-12 shadow" style="margin-top: 4rem;">
                 <div id="BoxPlot">
-{#                    <apexchart type=line height=350 :options="chartOptions" :series="series"></apexchart>#}
+                    <h2>년도별 재생시간 추이</h2>
                     <apexchart type=candlestick height=350 :options="chartOptions" :series="series" />
                 </div>
             </div>
             <!-- graph.1 -->
 
-            <div class="col-md-12">
+            <div class="col-md-12 shadow" style="margin-top: 4rem; margin-bottom: 6rem;">
                 <div id="StColumn">
                     <h2>년도별 음악장르 분포</h2>
                     <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
@@ -83,7 +83,7 @@
         <!-- // #contents -->
         
         <div id="footer">
-            {{ data }}
+            <div class="col-md-12"></div>
         </div>
         <!-- // #footer -->
 
@@ -335,7 +335,7 @@
           plotOptions: {
               candlestick: {
                   colors: {
-                      upward: '#20B2AA'
+                      upward: '#6495ED'
                   }
               }
           }
