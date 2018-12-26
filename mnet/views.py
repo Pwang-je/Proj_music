@@ -27,10 +27,6 @@ female_duo = (data[3])
 mixed = (data[4])
 
 
-def ajax_tag_autosearch(request):
-    if request.Get.has_key('year'):
-
-
 def main(request):
     return render(request, 'main.html',
                   {
