@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/mnet/views.py" line="22" />
-    <bookmark url="file://$PROJECT_DIR$/mnet/views.py" line="23" />
+    <bookmark url="file://$PROJECT_DIR$/mnet/views.py" line="38" />
+    <bookmark url="file://$PROJECT_DIR$/mnet/views.py" line="39" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f94780-98a6-48a0-a4dc-d1793302283c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/commons.css" afterDir="false" />
+    <list default="true" id="43f94780-98a6-48a0-a4dc-d1793302283c" name="Default Changelist" comment="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin : 2">
+      <change beforePath="$PROJECT_DIR$/Proj_music/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proj_music/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnet/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Proj_music$views.coverage" NAME="views Coverage Results" MODIFIED="1545641295086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mnet" />
+    <SUITE FILE_PATH="coverage/Proj_music$views.coverage" NAME="views Coverage Results" MODIFIED="1545823404697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mnet" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,19 +50,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="312" />
-          <entry key="html" value="4854" />
+          <entry key="html" value="5539" />
           <entry key="js" value="717" />
-          <entry key="py" value="2351" />
-          <entry key="txt" value="105" />
+          <entry key="py" value="3078" />
+          <entry key="txt" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="312" />
-          <entry key="HTML" value="4854" />
+          <entry key="HTML" value="5539" />
           <entry key="JavaScript" value="717" />
-          <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="2351" />
+          <entry key="PLAIN_TEXT" value="109" />
+          <entry key="Python" value="3078" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,7 +70,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="1" />
           <entry key="js" value="6" />
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -78,13 +78,13 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="6" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6501792">
+    <splitter split-orientation="horizontal" split-proportion="0.4318182">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -96,24 +96,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Proj_music/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#634#666#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+                <state relative-caret-position="533">
+                  <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
                   <folding>
+                    <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -144,23 +133,35 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                <state relative-caret-position="192">
+                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mnet/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="376">
+                  <caret line="194" column="33" lean-forward="true" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#24#37#0" expanded="true" />
+                    <marker date="1545824905899" expanded="true" signature="2966:3989" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mnet/views.py">
+            <entry file="file://$PROJECT_DIR$/Proj_music/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="343">
-                  <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+                <state relative-caret-position="554">
+                  <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
                   <folding>
-                    <element signature="e#24#59#0" expanded="true" />
-                    <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
+                    <element signature="e#634#666#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -192,11 +193,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Proj_music/settings.py" />
-        <option value="$PROJECT_DIR$/Proj_music/urls.py" />
-        <option value="$PROJECT_DIR$/mnet/views.py" />
         <option value="$PROJECT_DIR$/templates/js/commons.js" />
         <option value="$PROJECT_DIR$/templates/css/commons.css" />
+        <option value="$PROJECT_DIR$/Proj_music/urls.py" />
         <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/mnet/views.py" />
       </list>
     </option>
   </component>
@@ -215,9 +216,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
+    <option name="x" value="622" />
     <option name="y" value="3" />
-    <option name="width" value="1455" />
+    <option name="width" value="1292" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -417,19 +418,26 @@
       <option name="project" value="LOCAL" />
       <updated>1545817047401</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin : 2">
+      <created>1545817946551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545817946551</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="3" width="1455" height="1038" extended-state="0" />
+    <frame x="622" y="3" width="1292" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12397734" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32929516" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.25770926" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49837664" visible="true" weight="0.18764044" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,7 +446,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.2679372" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016234" side_tool="true" weight="0.33370787" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32929516" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -471,7 +479,8 @@
     <MESSAGE value="pie, bar chart complete." />
     <MESSAGE value="pie, bar + boxplot(candlestick chart) complete" />
     <MESSAGE value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin" />
-    <option name="LAST_COMMIT_MESSAGE" value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin" />
+    <MESSAGE value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin : 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin : 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/js/apexcharts.js">
@@ -508,16 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Proj_music/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -525,29 +524,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnet/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        <state relative-caret-position="192">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proj_music/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
-            <element signature="e#24#59#0" expanded="true" />
-            <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
+            <element signature="e#634#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
+    <entry file="file://$PROJECT_DIR$/mnet/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="376">
+          <caret line="194" column="33" lean-forward="true" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1545824905899" expanded="true" signature="2966:3989" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="533">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
