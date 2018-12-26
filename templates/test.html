@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/commons.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- <div class="col-md-12"> -->
+
+        <div id="viewtext" class="col-md-12">
+            <form action="musicmodel" class="form-inline">
+                <div class="col-md-4">
+                    <span class="input input--kyo">
+                        <div class="col-md" style="overflow: hidden;">
+                            <input type="text" id="Singer" name="singer" class="input__field input__field--kyo" v-model="selectedSinger">
+                            <label for="Singer" class="input__label input__label--kyo">
+                                <span class="input__label-content input__label-content--kyo">가수를 입력하세요</span>
+                            </label>
+                        </div>
+                        
+                        <div class="col-md" style="overflow: hidden;">
+                            <input type="text" id="Composer" name="composer" class="input__field input__field--kyo" v-model="selectedComposer">
+                            <label for="Composer" class="input__label input__label--kyo">
+                                <span class="input__label-content input__label-content--kyo">작곡가를 입력하세요</span>
+                            </label>
+                        </div>
+                    </span>
+                </div>
+                
+                <div id="test_data" class="col-md-4">
+                    <el-select v-model="value" name="music_type" placeholder="장르를 선택해 주세요.">
+                        <el-option
+                            v-for="item in options"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                        </el-option>
+                    </el-select>
+                </div>
+
+                <div class="col-md-4">
+                    <p>{{ examp }}</p>
+                    <p>{{ proba }}</p>
+                </div>
+                
+
+            </form>
+        </div>
+        <!-- // #viewtext -->        
+        
+
+        <!-- </div> -->
+
+    </div>
+    <!-- // .row -->
+
+{% comment %} https://element.eleme.io/#/en-US/component/button {% endcomment %}
+{% comment %} https://jsfiddle.net/hzfpyvg6/14/ {% endcomment %}
+{% comment %} https://www.google.com/search?q=bootstrap+4+button+color&source=lnms&tbm=isch&sa=X&ved=0ahUKEwixs_CZ873fAhUT62EKHa3gAioQ_AUIDigB&biw=1307&bih=901#imgrc=U02v-oZhc78IaM: {% endcomment %}
+{% comment %} https://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/ {% endcomment %}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/vue@2.5.21/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script>
+    var Selec = {
+        data() {
+            return {
+                options: [{
+                        value: '댄스 > 댄스',
+                        label: '댄스'
+                    }, {
+                        value: '가요 > 알앤비',
+                        label: '알앤비'
+                    }, {
+                        value: '가요 > 힙합',
+                        label: '힙합'
+                    }, {
+                        value: '가요 > 락',
+                        label: '락'
+                    }, {
+                        value: 'OST',
+                        label: 'OST'
+                    }, {
+                        value: '기타',
+                        label: '기타'
+                    }],
+                    value: ''
+            }
+        }
+    }
+    var Selitem = Vue.extend(Selec)
+    new Selitem().$mount('#test_data')
+</script>
+</body>
+</html>
