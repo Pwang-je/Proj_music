@@ -49,19 +49,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="164" />
-          <entry key="html" value="4451" />
+          <entry key="css" value="312" />
+          <entry key="html" value="4854" />
           <entry key="js" value="717" />
           <entry key="py" value="2351" />
-          <entry key="txt" value="31" />
+          <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="164" />
-          <entry key="HTML" value="4451" />
+          <entry key="CSS" value="312" />
+          <entry key="HTML" value="4854" />
           <entry key="JavaScript" value="717" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="105" />
           <entry key="Python" value="2351" />
         </counts>
       </usages-collector>
@@ -84,7 +84,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.628068">
+    <splitter split-orientation="horizontal" split-proportion="0.6501792">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -111,15 +111,21 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="329">
-                  <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
+                <state relative-caret-position="504">
+                  <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="e#3443#3972#0#HTML" />
                     <element signature="e#4018#5745#0#HTML" />
                     <element signature="e#5797#7506#0#HTML" />
+                    <element signature="e#7745#9524#0#HTML" />
                   </folding>
                 </state>
               </provider>
@@ -129,20 +135,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                <state>
+                  <caret column="13" selection-start-column="13" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="552">
+                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
@@ -150,8 +156,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mnet/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="343">
+                  <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
                   <folding>
                     <element signature="e#24#59#0" expanded="true" />
                     <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
@@ -188,8 +194,8 @@
         <option value="$PROJECT_DIR$/Proj_music/settings.py" />
         <option value="$PROJECT_DIR$/Proj_music/urls.py" />
         <option value="$PROJECT_DIR$/mnet/views.py" />
-        <option value="$PROJECT_DIR$/templates/css/commons.css" />
         <option value="$PROJECT_DIR$/templates/js/commons.js" />
+        <option value="$PROJECT_DIR$/templates/css/commons.css" />
         <option value="$PROJECT_DIR$/templates/main.html" />
       </list>
     </option>
@@ -397,7 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545808128484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pie, bar + boxplot(candlestick chart) complete">
+      <created>1545815852177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545815852177</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin">
+      <created>1545817047401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545817047401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,7 +469,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="test22" />
     <MESSAGE value="pie, bar chart complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="pie, bar chart complete." />
+    <MESSAGE value="pie, bar + boxplot(candlestick chart) complete" />
+    <MESSAGE value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/js/apexcharts.js">
@@ -496,10 +518,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mnet/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="343">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
             <marker date="1545805662794" expanded="true" signature="1701:2723" ph="..." />
@@ -509,29 +538,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/css/commons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/commons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="552">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
+        <state relative-caret-position="504">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#3443#3972#0#HTML" />
             <element signature="e#4018#5745#0#HTML" />
             <element signature="e#5797#7506#0#HTML" />
+            <element signature="e#7745#9524#0#HTML" />
           </folding>
         </state>
       </provider>

@@ -41,12 +41,12 @@
             <!-- //.top -->
 
 
-            <div class="col-md-12 shadow default-margin">
-                <form action="chart" class="form-inline">{% csrf_token %}
-                    <div class="col-md-12" style="margin-bottom: 4rem;">
+            <div class="col-md-12 shadow default-margin" style="background-color: white; overflow: hidden;">
+                <form action="chart" class="form-inline" style="margin: 4rem 0;">{% csrf_token %}
+                    <div class="col-md-12">
                         <h2>활동유형 현황</h2>
                         {% for target_year in month %}
-                            <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info" style="width: 6.2rem; margin-top: 2rem;">
+                            <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info" style="width: 6.2rem; margin-top: 2rem; overflow: hidden;">
                         {% endfor %}
                     </div>
 
@@ -64,16 +64,16 @@
             </div>
             <!-- // 활동유형 현황 -->
 
-            <div class="col-md-12 shadow" style="margin-top: 4rem;">
-                <div id="BoxPlot">
+            <div class="col-md-12 shadow" style="margin-top: 4rem; background-color: white; overflow: hidden;">
+                <div id="BoxPlot" style="margin: 4rem 0;">
                     <h2>년도별 재생시간 추이</h2>
                     <apexchart type=candlestick height=350 :options="chartOptions" :series="series" />
                 </div>
             </div>
             <!-- graph.1 -->
 
-            <div class="col-md-12 shadow" style="margin-top: 4rem; margin-bottom: 6rem;">
-                <div id="StColumn">
+            <div class="col-md-12 shadow" style="margin-top: 4rem; margin-bottom: 6rem; background-color: white; overflow: hidden;">
+                <div id="StColumn" style="margin: 4rem 0">
                     <h2>년도별 음악장르 분포</h2>
                     <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
                 </div>

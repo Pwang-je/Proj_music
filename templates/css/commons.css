@@ -17,3 +17,7 @@ body {
 .default-margin {
     margin: 4rem 0 !important;
 }
+
+.default-color {
+    background-color: white;
+}
