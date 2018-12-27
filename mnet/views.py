@@ -1,25 +1,22 @@
 # -*- coding: utf-8 -*-
-import pickle
 from django.shortcuts import render
-import xlrd
-
 import pymongo
 import pandas as pd
 import numpy as np
 import pickle
+import math
+import xlrd
 
 from sklearn.ensemble import RandomForestClassifier,ExtraTreesClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-
 from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
 
 from scipy.sparse import csr_matrix
 from scipy.sparse import hstack
 from scipy.sparse import vstack
-
 from sklearn.metrics import accuracy_score
 
 
@@ -46,9 +43,6 @@ with open('C:\\work\\Proj_music\\feature_list_singer_2.txt', 'rb') as f:
     feature_list_singer_2 = pickle.load(f)
 with open('C:\\work\\Proj_music\\feature_list_pd_2.txt', 'rb') as f:
     feature_list_pd_2 = pickle.load(f)
-# print('final_model', final_model)
-# print('feature_list_singer_2', feature_list_singer_2)
-# print('feature_list_pd_2', feature_list_pd_2)
 
 
 def trans_music_type(x):
@@ -163,11 +157,9 @@ def musicmodel(request):
     #     proba_final
 
     if pred_user:
-        x = '축하합니다. 10위안에 들어왔음'
+        msg = '축하합니다! 10위안에 들 수 있을 것 같아요!'
     else:
-        x = '망했음'
-
-    # print(x)
+        msg = '아쉽네요! 10위안에 들 수 없을 것 같아요..'
 
     # activity type
     year = 2009
@@ -186,10 +178,12 @@ def musicmodel(request):
     alpha = df_3[df_3['년월'] == int(year)].groupby('활동유형').size()
     alpha = np.array(alpha)
 
+    proba_msg = '10위안에 들 확률은 <strong>' + '%d' % (round(proba[0][1], 2)) + '%</strong> 입니다.'
+
     return render(request, 'main.html',
                   {
-                    'examp': x,
-                    "proba": proba[0][1],
+                    'examp': msg,
+                    "proba": proba_msg,
                     "month": month_data,
                     "male": a_process[0],
                     "female": a_process[1],

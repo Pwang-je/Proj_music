@@ -10,8 +10,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="{% static 'css/commons.css' %}">
-    <title>Document</title>
+    <title>늬 음악이 몇위일지 찾아랑</title>
 </head>
 <body>
 
@@ -24,35 +25,53 @@
         
         <div id="contents" class="container">
 
-            <form action="musicmodel" class="form-inline">{% csrf_token %}
-                <div class="col-md-12" style="margin: 4rem 0;">
-                    <div class="col-md-8">
-                        <input type="text" name="singer" placeholder="가수를 입력하세요" class="form-control">
-                        <input type="text" name="composer" placeholder="작곡가를 입력하세요" class="form-control">
-                        <select name="music_type" class="form-control">
-                            <option value="댄스 > 댄스">댄스</option>
-                            <option value="가요 > 알앤비">알앤비</option>
-                            <option value="가요 > 힙합">힙합</option>
-                            <option value="가요 > 락">락</option>
-                            <option value="OST">OST</option>
-                            <option value="기타">기타</option>
-                        </select>
+            <div id="viewtext" class="col-md-12 shadow" style="margin-top: 4rem; border-radius: 3rem;">
+                <form action="musicmodel" class="form-inline">
+                    <div class="col-md-4">
+                        <span class="input input--kyo">
+                            <div class="col-md" style="overflow: hidden;">
+                                <input type="text" id="Singer" name="singer" class="input__field input__field--kyo" v-model="selectedSinger" autocomplete=off>
+                                <label for="Singer" class="input__label input__label--kyo">
+                                    <span class="input__label-content input__label-content--kyo">가수를 입력하세요</span>
+                                </label>
+                            </div>
+
+                            <div class="col-md" style="overflow: hidden;">
+                                <input type="text" id="Composer" name="composer" class="input__field input__field--kyo" v-model="selectedComposer" autocomplete=off>
+                                <label for="Composer" class="input__label input__label--kyo">
+                                    <span class="input__label-content input__label-content--kyo">작곡가를 입력하세요</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div id="test_data" class="col-md-4">
+                        <el-select v-model="value" name="music_type" placeholder="장르를 선택해 주세요.">
+                            <el-option
+                                v-for="item in options"
+                                :key="item.value"
+                                :label="item.label"
+                                :value="item.value">
+                            </el-option>
+                        </el-select>
                         <input type="submit" value="확인" class="btn btn-info">
                     </div>
                     <div class="col-md-4">
-                        <label for=""></label>
-                        <input type="text" placeholder="{{ examp }}" class="form-control">
-                        <input type="text" placeholder="{{ proba }} % 임." class="form-control">
+                        <p>{{ examp }}</p>
+                        <p>{{ proba | safe }}</p>
                     </div>
-                </div>
-            </form>
+
+
+                </form>
+            </div>
+
             <!-- //.top -->
 
 
-            <div class="col-md-12 shadow default-margin" style="background-color: white; overflow: hidden;">
+            <div class="col-md-12 shadow default-margin" style="background-color: white; overflow: hidden; border-radius: 3rem;">
                 <form action="chart" class="form-inline" style="margin: 4rem 0;">{% csrf_token %}
-                    <div class="col-md-12">
-                        <h2>활동유형 현황</h2>
+                    <div class="col-md-12" style="margin-bottom: 2rem;">
+                        <h2><i class="el-icon-service"></i>&nbsp;활동유형 현황</h2>
                         {% for target_year in month %}
                             <input type="submit" value="{{ target_year }}" name="year" class="btn btn-info" style="width: 6.2rem; margin-top: 2rem; overflow: hidden;">
                         {% endfor %}
@@ -72,28 +91,38 @@
             </div>
             <!-- // 활동유형 현황 -->
 
-            <div class="col-md-12 shadow" style="margin-top: 4rem; background-color: white; overflow: hidden;">
+            <div class="col-md-12 shadow" style="margin-top: 4rem; background-color: white; overflow: hidden; border-radius: 3rem;">
                 <div id="BoxPlot" style="margin: 4rem 0;">
-                    <h2>년도별 재생시간 추이</h2>
+                    <h2><i class="el-icon-service"></i>&nbsp;년도별 재생시간 추이</h2>
                     <apexchart type=candlestick height=350 :options="chartOptions" :series="series" />
                 </div>
             </div>
             <!-- graph.1 -->
 
-            <div class="col-md-12 shadow" style="margin-top: 4rem; margin-bottom: 6rem; background-color: white; overflow: hidden;">
+            <div class="col-md-12 shadow" style="margin-top: 4rem; margin-bottom: 6rem; background-color: white; overflow: hidden; border-radius: 3rem;">
                 <div id="StColumn" style="margin: 4rem 0">
-                    <h2>년도별 음악장르 분포</h2>
+                    <h2><i class="el-icon-service"></i>&nbsp;년도별 음악장르 분포</h2>
                     <apexchart type=bar height=350 :options="chartOptions" :series="series"></apexchart>
                 </div>
             </div>
             <!-- graph.3 -->
+
+
+        <div id="footer" class="text-center">
+            <div class="col-md-12 text-center">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">&copy; 2018 유정오 최종찬 홍당희 문경영 이대한 황재훈</p>
+{#                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>#}
+                </blockquote>
+            </div>
+        </div>
+        <!-- // #footer -->
+
+
         </div>
         <!-- // #contents -->
         
-        <div id="footer">
-            <div class="col-md-12"></div>
-        </div>
-        <!-- // #footer -->
+
 
     </div>
 </div>
@@ -103,6 +132,8 @@
 <script src="{% static 'js/vue.js' %}"></script>
 <script src="{% static 'js/apexcharts.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="{% static 'js/classie.js' %}"></script>
 <script src="{% static 'js/commons.js' %}"></script>
 
 <!-- pie -->
@@ -350,6 +381,38 @@
         }
       }
     })
+</script>
+
+<!-- select options -->
+<script>
+    var Selec = {
+        data() {
+            return {
+                options: [{
+                        value: '댄스 > 댄스',
+                        label: '댄스'
+                    }, {
+                        value: '가요 > 알앤비',
+                        label: '알앤비'
+                    }, {
+                        value: '가요 > 힙합',
+                        label: '힙합'
+                    }, {
+                        value: '가요 > 락',
+                        label: '락'
+                    }, {
+                        value: 'OST',
+                        label: 'OST'
+                    }, {
+                        value: '기타',
+                        label: '기타'
+                    }],
+                    value: ''
+            }
+        }
+    }
+    var Selitem = Vue.extend(Selec)
+    new Selitem().$mount('#test_data')
 </script>
 
 </body>
