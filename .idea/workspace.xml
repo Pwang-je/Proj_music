@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f94780-98a6-48a0-a4dc-d1793302283c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Proj_music.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proj_music.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/commons.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/commons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
           <entry key="html" value="5931" />
           <entry key="js" value="717" />
           <entry key="py" value="3355" />
-          <entry key="txt" value="131" />
+          <entry key="txt" value="141" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,7 +61,7 @@
           <entry key="CSS" value="400" />
           <entry key="HTML" value="5931" />
           <entry key="JavaScript" value="717" />
-          <entry key="PLAIN_TEXT" value="131" />
+          <entry key="PLAIN_TEXT" value="141" />
           <entry key="Python" value="3355" />
         </counts>
       </usages-collector>
@@ -102,7 +97,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="-3119">
               <caret line="7" column="114" lean-forward="true" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -418,14 +413,20 @@
       <option name="project" value="LOCAL" />
       <updated>1545825170674</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="comp_last">
+      <created>1545895950669</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545895950669</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13219616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -436,7 +437,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.8460674" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.45044053" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016234" side_tool="true" weight="0.33370787" />
@@ -474,7 +475,8 @@
     <MESSAGE value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin" />
     <MESSAGE value="pie, bar + boxplot(candlestick chart) complete.&#10;&#10;boxshadow, margin : 2" />
     <MESSAGE value="comp_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="comp_1" />
+    <MESSAGE value="comp_last" />
+    <option name="LAST_COMMIT_MESSAGE" value="comp_last" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/js/apexcharts.js">
@@ -564,7 +566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="-3119">
           <caret line="7" column="114" lean-forward="true" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
